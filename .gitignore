@@ -1,0 +1,17 @@
+# Documentation files (exclude from deployment)
+*.md
+!README.md
+
+# PDF files
+*.pdf
+
+# IDE and system files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
