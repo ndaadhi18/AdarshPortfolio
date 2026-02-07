@@ -1,3 +1,3 @@
 # Portfolio Website
 
-https://adarshs-info.netlify.app/
+http://www.adarsh-s.tech/
