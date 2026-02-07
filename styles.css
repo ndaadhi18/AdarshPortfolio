@@ -474,6 +474,349 @@ body {
   }
 }
 
+/* Core Skills Section */
+.core-skills-container {
+  margin: 3rem auto;
+  max-width: 900px;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.skills-title {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+.skills-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background: var(--accent-blue);
+  box-shadow: 0 0 10px var(--accent-blue);
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(13, 17, 23, 0.4);
+  border: 1px solid var(--border-muted);
+  width: 100px;
+  transition: all var(--transition-base);
+  cursor: default;
+}
+
+.skill-item:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--accent-blue);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: grayscale(20%);
+  transition: all var(--transition-base);
+}
+
+.skill-item:hover .skill-icon {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.skill-name {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: color var(--transition-base);
+}
+
+.skill-item:hover .skill-name {
+  color: var(--text-primary);
+}
+
+/* Certifications & Achievements Section */
+.certifications-section {
+  position: relative;
+  padding: 6rem 2rem;
+  background: linear-gradient(180deg, #0a0e14 0%, #010409 100%);
+  z-index: 1;
+  border-top: 1px solid var(--border-muted);
+}
+
+.certifications-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* Certification Cards */
+.cert-card {
+  display: block; /* Ensure it behaves like a block */
+  text-decoration: none; /* Remove underline */
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all var(--transition-base);
+  opacity: 0;
+  transform: translateY(30px);
+  cursor: pointer;
+}
+
+.cert-card.aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cert-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--accent-blue);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.cert-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cert-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-base);
+}
+
+.cert-logo svg {
+  width: 28px;
+  height: 28px;
+}
+
+/* Brand-specific logo colors */
+.oracle-logo {
+  background: rgba(240, 79, 34, 0.1);
+  color: #f04f22;
+}
+
+.cert-card:hover .oracle-logo {
+  background: rgba(240, 79, 34, 0.2);
+  transform: scale(1.1);
+}
+
+.anthropic-logo {
+  background: rgba(204, 153, 102, 0.1);
+  color: #cc9966;
+}
+
+.cert-card:hover .anthropic-logo {
+  background: rgba(204, 153, 102, 0.2);
+  transform: scale(1.1);
+}
+
+.coursera-logo {
+  background: rgba(42, 115, 204, 0.1);
+  color: #2a73cc;
+}
+
+.cert-card:hover .coursera-logo {
+  background: rgba(42, 115, 204, 0.2);
+  transform: scale(1.1);
+}
+
+.datacamp-logo {
+  background: rgba(3, 192, 60, 0.1);
+  color: #03c03c;
+}
+
+.cert-card:hover .datacamp-logo {
+  background: rgba(3, 192, 60, 0.2);
+  transform: scale(1.1);
+}
+
+.cert-issuer {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cert-title {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.cert-date {
+  color: var(--accent-green);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.cert-description {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Achievements Section */
+.achievements-section {
+  margin-top: 3rem;
+}
+
+.achievements-title {
+  font-size: 2rem;
+  color: var(--accent-blue);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.achievement-card {
+  text-decoration: none; /* Remove underline */
+  cursor: pointer;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  transition: all var(--transition-base);
+  max-width: 900px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.achievement-card.aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.achievement-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--accent-yellow);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.achievement-badge {
+  flex-shrink: 0;
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, var(--accent-yellow), var(--accent-orange));
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 0 30px rgba(217, 153, 34, 0.4);
+  padding: 0.5rem; /* Ensure padding prevents text hitting edges */
+  text-align: center;
+}
+
+.achievement-badge svg {
+  width: 32px;
+  height: 32px;
+  color: var(--bg-primary);
+  margin-bottom: 0.2rem;
+  display: block; /* Remove inline spacing */
+}
+
+.achievement-rank {
+  font-size: 0.65rem;
+  color: var(--bg-primary);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  text-align: center;
+  width: 100%;
+}
+
+.achievement-content {
+  flex: 1;
+}
+
+.achievement-event {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.achievement-date {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.achievement-description {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.achievement-description strong {
+  color: var(--accent-blue);
+  font-weight: 600;
+}
+
+/* Responsive Design for Certifications */
+@media (max-width: 768px) {
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievement-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .achievement-badge {
+    margin-bottom: 1rem;
+  }
+}
+
 /* Footer */
 .footer {
   position: relative;

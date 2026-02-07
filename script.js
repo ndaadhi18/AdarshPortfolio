@@ -6,7 +6,7 @@ class AsteroidField {
     this.asteroids = [];
     this.numAsteroids = 80;
     this.mouse = { x: 0, y: 0 };
-    this.baseSpeed = 8;
+    this.baseSpeed = 0.2; // Very slow base speed for floating effect
     this.speedMultiplier = 1;
 
     this.init();
@@ -23,12 +23,9 @@ class AsteroidField {
       this.mouse.y = e.clientY;
     });
 
-    window.addEventListener("scroll", () => {
-      const scrollPercent =
-        window.scrollY /
-        (document.documentElement.scrollHeight - window.innerHeight);
-      this.speedMultiplier = 8 - scrollPercent * 7.7;
-    });
+    // Removed scroll-based speed change to keep it steady
+    // Optional: Parallax effect on scroll can remain on the asteroids themselves via y position if adjusted,
+    // but the z-speed should stay constant for "floating".
   }
 
   resize() {
