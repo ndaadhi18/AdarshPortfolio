@@ -3,664 +3,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adarsh S — Passionate AI Engineer</title>
-    <meta name="description" content="Portfolio of Adarsh S, Passionate AI Engineer specializing in RAG systems, LangChain, and production-grade medical AI applications.">
+    <title>Adarsh S — AI Engineer</title>
+    <meta name="description" content="Portfolio of Adarsh S, AI Engineer specializing in RAG systems, LangChain, and production-grade AI applications.">
     <meta name="author" content="Adarsh S">
-    <meta name="keywords" content="RAG, LangChain, Medical AI, FastAPI, Pinecone, LangGraph, Machine Learning, Data Science">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Asteroid Background -->
+    <canvas id="asteroidCanvas"></canvas>
+
     <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="badge-dot"></span>
-                    <span>Available for AI Engineer Intern Role</span>
-                </div>
-                <h1 class="hero-title">
-                    I build RAG systems that
-                    <span class="gradient-text">validate context</span>,
-                    <span class="gradient-text">prevent hallucinations</span>, and
-                    <span class="gradient-text">deploy to production</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Adarsh S — B.E. Computer Science (Data Science), DSCE (CGPA: 9.09/10)<br>
-                    Research Associate @ Propel AI | Specializing in RAG pipelines, LangChain, and production-grade medical AI
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-name">ADARSH S</h1>
+
+            <div class="bio">
+                <p class="bio-text">
+                    Computer Science Engineering student passionate about Artificial Intelligence and Agentic AI,
+                    with strong hands-on experience in machine learning, deep learning, and NLP. I enjoy building
+                    intelligent systems that solve real-world problems and continuously expanding my skills through
+                    projects, research, and experimentation.
                 </p>
-                <div class="hero-cta">
-                    <a href="#systems" class="btn btn-primary">View Systems</a>
-                    <a href="https://github.com/ndaadhi18" target="_blank" class="btn btn-secondary">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                        GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/ndaadhi" target="_blank" class="btn btn-secondary">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                        </svg>
-                        LinkedIn
-                    </a>
-                </div>
             </div>
-        </div>
-        <div class="hero-background"></div>
-    </section>
 
-    <!-- Experience & Education Section -->
-    <section id="background" class="section">
-        <div class="container">
-            <h2 class="section-title">Background</h2>
-            <div class="background-grid">
-                <div class="background-card">
-                    <div class="card-icon">💼</div>
-                    <h3>Experience</h3>
-                    <div class="experience-item">
-                        <h4>Research Associate Intern</h4>
-                        <p class="company">Propel AI</p>
-                        <p class="duration">Nov 2025 – Present | Bengaluru, India</p>
-                        <ul>
-                            <li>Validated and enriched a <strong>1.4M+ journalist database</strong></li>
-                            <li>Improved data quality for AI-generated outputs in a PRM SaaS platform</li>
-                            <li>Implemented data validation pipelines for large-scale database enrichment</li>
-                        </ul>
-                    </div>
-                    <div class="experience-item">
-                        <h4>Data Analytics Virtual Internship</h4>
-                        <p class="company">Deloitte (Forage)</p>
-                        <p class="duration">Jul 2025</p>
-                        <ul>
-                            <li>Analyzed <strong>10,000+ customer transactions</strong></li>
-                            <li>Built Excel and Power BI dashboards for data visualization</li>
-                            <li>Performed exploratory data analysis and customer segmentation</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="background-card">
-                    <div class="card-icon">🎓</div>
-                    <h3>Education</h3>
-                    <div class="education-item">
-                        <h4>B.E. in Computer Science and Engineering (Data Science)</h4>
-                        <p class="institution">Dayananda Sagar College of Engineering</p>
-                        <p class="duration">2022 – 2026 | Bengaluru, Karnataka</p>
-                        <p class="gpa"><strong>CGPA: 9.09 / 10</strong></p>
-                    </div>
-
-                    <h3 style="margin-top: 32px;">Certifications</h3>
-                    <ul class="cert-list">
-                        <li><strong>Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</strong></li>
-                        <li><strong>Introduction to Model Context Protocol</strong> — Anthropic</li>
-                        <li><strong>Machine Learning Specialization</strong> — Coursera</li>
-                    </ul>
+            <div class="education-card">
+                <div class="education-icon">🎓</div>
+                <div class="education-details">
+                    <h3>B.E. Computer Science and Engineering (Data Science)</h3>
+                    <p class="institution">Dayananda Sagar College of Engineering</p>
+                    <p class="duration">2022 – 2026 | Bengaluru, Karnataka</p>
+                    <p class="gpa">CGPA: <span class="gpa-value">9.09 / 10</span></p>
                 </div>
             </div>
 
-            <!-- Achievements -->
-            <div class="achievements-section">
-                <h3>🏆 Achievements</h3>
-                <div class="achievement-card">
-                    <h4>1st Runner-Up, The AI Hiring Show (Aug 2025)</h4>
-                    <p>Built and presented <strong>TechPrep</strong>, an AI-powered career preparation platform</p>
-                </div>
+            <div class="interests">
+                <span class="tag">LangChain</span>
+                <span class="tag">RAG Pipelines</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Vector Databases</span>
+                <span class="tag">Deep Learning</span>
+                <span class="tag">NLP</span>
+            </div>
+
+            <div class="hero-links">
+                <a href="https://github.com/ndaadhi18" target="_blank" class="link-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/ndaadhi" target="_blank" class="link-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                    LinkedIn
+                </a>
+                <a href="mailto:ndaadhi18@gmail.com" class="link-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+                    </svg>
+                    Email
+                </a>
+            </div>
+
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
             </div>
         </div>
     </section>
 
-    <!-- Philosophy Section -->
-    <section id="philosophy" class="section section-dark">
-        <div class="container">
-            <h2 class="section-title">How I Think</h2>
-            <div class="philosophy-grid">
-                <div class="philosophy-card">
-                    <div class="card-icon">🎯</div>
-                    <h3>Decision Framework</h3>
-                    <p>I start by defining what a system <strong>cannot</strong> do. Production systems need guardrails, not just capabilities.</p>
-                    <ul class="priority-list">
-                        <li><span class="priority-number">1</span> Context validation over blind retrieval</li>
-                        <li><span class="priority-number">2</span> Deployment-first architecture</li>
-                        <li><span class="priority-number">3</span> Explicit error handling</li>
-                    </ul>
-                </div>
-                <div class="philosophy-card">
-                    <div class="card-icon">⚖️</div>
-                    <h3>Trade-offs I Prioritize</h3>
-                    <div class="tradeoff-item">
-                        <strong>Accuracy vs. Speed</strong>
-                        <p>Top-3 retrieval with quality checks over fast, unreliable answers</p>
-                    </div>
-                    <div class="tradeoff-item">
-                        <strong>Deployment vs. Features</strong>
-                        <p>Ship working systems (Render + Streamlit) over local-only demos</p>
-                    </div>
-                    <div class="tradeoff-item">
-                        <strong>Simplicity vs. Complexity</strong>
-                        <p>Use proven patterns (LangChain RetrievalQA) over custom implementations</p>
-                    </div>
-                </div>
-            </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <h2 class="section-title">SYSTEMS BUILT</h2>
+            <p class="section-subtitle">Production-grade AI systems deployed and documented</p>
         </div>
-    </section>
 
-    <!-- Systems Section -->
-    <section id="systems" class="section">
-        <div class="container">
-            <h2 class="section-title">Systems Built</h2>
-
-            <!-- Flagship System -->
-            <div class="system-card flagship">
-                <div class="system-badge">⭐ Flagship System</div>
-                <div class="system-header">
-                    <h3>AI Medical Assistant</h3>
-                    <span class="system-type">Production RAG System</span>
-                </div>
-                <p class="system-description">
+        <div class="projects-grid">
+            <!-- Project 1: Medical Assistant -->
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-badge">FLAGSHIP</div>
+                <h3 class="project-title">AI Medical Assistant</h3>
+                <p class="project-type">Production RAG System</p>
+                <p class="project-description">
                     Full-stack medical document Q&A system with FastAPI backend and Streamlit frontend.
                     Deployed to production (Render + Streamlit Cloud) with Pinecone vector storage and LangChain RAG pipeline.
                 </p>
 
-                <div class="system-architecture">
-                    <h4>System Architecture</h4>
-                    <div class="flow-diagram">
-                        <div class="flow-node">
-                            <div class="node-label">Frontend</div>
-                            <div class="node-desc">Streamlit UI (PDF upload + chat)</div>
-                        </div>
-                        <div class="flow-arrow">→</div>
-                        <div class="flow-node">
-                            <div class="node-label">FastAPI Backend</div>
-                            <div class="node-desc">CORS-enabled REST API</div>
-                        </div>
-                        <div class="flow-arrow">→</div>
-                        <div class="flow-node">
-                            <div class="node-label">RAG Pipeline</div>
-                            <div class="node-desc">LangChain + Groq LLM</div>
-                        </div>
-                        <div class="flow-arrow">→</div>
-                        <div class="flow-node">
-                            <div class="node-label">Pinecone</div>
-                            <div class="node-desc">Vector storage (top-3 retrieval)</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="system-controls">
-                    <h4>Production Features</h4>
-                    <div class="control-grid">
-                        <div class="control-item">
-                            <span class="control-icon">✓</span>
-                            <span>Deployed backend on Render (FastAPI)</span>
-                        </div>
-                        <div class="control-item">
-                            <span class="control-icon">✓</span>
-                            <span>Deployed frontend on Streamlit Cloud</span>
-                        </div>
-                        <div class="control-item">
-                            <span class="control-icon">✓</span>
-                            <span>CORS middleware for cross-origin requests</span>
-                        </div>
-                        <div class="control-item">
-                            <span class="control-icon">✓</span>
-                            <span>Exception handling middleware</span>
-                        </div>
-                        <div class="control-item">
-                            <span class="control-icon">✓</span>
-                            <span>Chat history download feature</span>
-                        </div>
-                        <div class="control-item">
-                            <span class="control-icon">✗</span>
-                            <span>Cannot answer without context (explicit prompt constraint)</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="system-tech">
+                <div class="project-tech">
                     <span class="tech-tag">LangChain</span>
                     <span class="tech-tag">FastAPI</span>
                     <span class="tech-tag">Pinecone</span>
                     <span class="tech-tag">Groq (Llama3-70B)</span>
                     <span class="tech-tag">Streamlit</span>
-                    <span class="tech-tag">Google Embeddings</span>
                 </div>
 
-                <div class="system-links">
-                    <a href="https://medical-assistance-chatbot.streamlit.app/" target="_blank" class="system-link live">
+                <div class="project-highlights">
+                    <div class="highlight">
+                        <span class="highlight-icon">✓</span>
+                        <span>Deployed on Render + Streamlit Cloud</span>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-icon">✓</span>
+                        <span>Top-3 retrieval with Pinecone</span>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-icon">✓</span>
+                        <span>Hallucination prevention via prompt constraints</span>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://medical-assistance-chatbot.streamlit.app/" target="_blank" class="project-link live">
                         <span class="live-dot"></span>
-                        Live Demo →
+                        Live Demo
                     </a>
-                    <a href="https://medical-assistance-chatbot-gzla.onrender.com" target="_blank" class="system-link live">
-                        <span class="live-dot"></span>
-                        API Backend →
-                    </a>
-                    <a href="https://github.com/ndaadhi18/medical-assistance-chatbot" target="_blank" class="system-link">
+                    <a href="https://github.com/ndaadhi18/medical-assistance-chatbot" target="_blank" class="project-link">
                         GitHub →
-                    </a>
-                    <a href="#deep-dive" class="system-link">
-                        Deep Dive →
                     </a>
                 </div>
             </div>
 
-            <!-- System 2 -->
-            <div class="system-card">
-                <div class="system-header">
-                    <h3>Self-Reflective RAG Agent</h3>
-                    <span class="system-type">LangGraph Workflow</span>
-                </div>
-                <p class="system-description">
+            <!-- Project 2: RAG Agent -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="project-title">Self-Reflective RAG Agent</h3>
+                <p class="project-type">LangGraph Workflow</p>
+                <p class="project-description">
                     4-node LangGraph workflow with self-evaluation: plan → retrieve → answer → reflect.
-                    Prevents irrelevant retrieval and unsupported answers.
+                    Prevents irrelevant retrieval and unsupported answers through quality scoring.
                 </p>
 
-                <div class="system-architecture">
-                    <h4>Workflow Nodes</h4>
-                    <div class="flow-diagram">
-                        <div class="flow-node compact">
-                            <div class="node-label">Plan</div>
-                            <div class="node-desc">Keyword-based retrieval decision</div>
-                        </div>
-                        <div class="flow-arrow">→</div>
-                        <div class="flow-node compact">
-                            <div class="node-label">Retrieve</div>
-                            <div class="node-desc">ChromaDB MMR search (top-3)</div>
-                        </div>
-                        <div class="flow-arrow">→</div>
-                        <div class="flow-node compact">
-                            <div class="node-label">Answer</div>
-                            <div class="node-desc">Context-grounded generation</div>
-                        </div>
-                        <div class="flow-arrow">→</div>
-                        <div class="flow-node compact">
-                            <div class="node-label">Reflect</div>
-                            <div class="node-desc">Quality scoring (0.0-1.0)</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="system-tech">
+                <div class="project-tech">
                     <span class="tech-tag">LangGraph</span>
                     <span class="tech-tag">ChromaDB</span>
                     <span class="tech-tag">Sentence-Transformers</span>
                     <span class="tech-tag">Gemini</span>
-                    <span class="tech-tag">LangSmith</span>
                 </div>
 
-                <div class="system-links">
-                    <a href="https://agentic-rag-using-langgraph.streamlit.app/" target="_blank" class="system-link live">
+                <div class="project-highlights">
+                    <div class="highlight">
+                        <span class="highlight-icon">✓</span>
+                        <span>Keyword-based retrieval decision</span>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-icon">✓</span>
+                        <span>Quality scoring (0.0-1.0)</span>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-icon">✓</span>
+                        <span>Context-grounded generation</span>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://agentic-rag-using-langgraph.streamlit.app/" target="_blank" class="project-link live">
                         <span class="live-dot"></span>
-                        Live Demo →
+                        Live Demo
                     </a>
-                    <a href="https://github.com/ndaadhi18/rag-agent-using-langgraph" target="_blank" class="system-link">
+                    <a href="https://github.com/ndaadhi18/rag-agent-using-langgraph" target="_blank" class="project-link">
                         GitHub →
                     </a>
                 </div>
             </div>
 
-            <!-- System 3 -->
-            <div class="system-card">
-                <div class="system-header">
-                    <h3>Multi-Tool Chatbot</h3>
-                    <span class="system-type">Tool Orchestration + Memory</span>
-                </div>
-                <p class="system-description">
+            <!-- Project 3: Multi-Tool Chatbot -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="project-title">Multi-Tool Chatbot</h3>
+                <p class="project-type">Tool Orchestration + Memory</p>
+                <p class="project-description">
                     LangGraph agent with 8 external tools (search, APIs) and SQLite memory persistence.
-                    Thread-based conversation isolation.
+                    Thread-based conversation isolation for multi-user support.
                 </p>
 
-                <div class="system-controls">
-                    <h4>Tool Inventory</h4>
-                    <div class="tool-grid">
-                        <span class="tool-badge">🔍 DuckDuckGo Search</span>
-                        <span class="tool-badge">🧮 Calculator</span>
-                        <span class="tool-badge">📈 Stock Prices</span>
-                        <span class="tool-badge">🌤️ Weather</span>
-                        <span class="tool-badge">🕐 Time Zones</span>
-                        <span class="tool-badge">💱 Currency Conversion</span>
-                        <span class="tool-badge">💡 Random Facts</span>
-                        <span class="tool-badge">😂 Jokes</span>
-                    </div>
-                </div>
-
-                <div class="system-tech">
+                <div class="project-tech">
                     <span class="tech-tag">LangGraph</span>
                     <span class="tech-tag">Gemini 2.5 Flash</span>
                     <span class="tech-tag">SQLite</span>
                     <span class="tech-tag">Streamlit</span>
                 </div>
 
-                <div class="system-links">
-                    <a href="https://github.com/ndaadhi18/Multi-tool-Chatbot" target="_blank" class="system-link">
+                <div class="project-highlights">
+                    <div class="highlight">
+                        <span class="highlight-icon">✓</span>
+                        <span>8 integrated tools (search, weather, stocks, etc.)</span>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-icon">✓</span>
+                        <span>Persistent conversation memory</span>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-icon">✓</span>
+                        <span>Thread isolation for concurrent users</span>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/ndaadhi18/Multi-tool-Chatbot" target="_blank" class="project-link">
                         GitHub →
                     </a>
                 </div>
             </div>
 
-            <!-- System 4 -->
-            <div class="system-card">
-                <div class="system-header">
-                    <h3>Gesture to Speech Communication System</h3>
-                    <span class="system-type">CNN-based Classification</span>
-                </div>
-                <p class="system-description">
-                    CNN-based gesture classification system with 16 gesture classes using a self-curated dataset.
+            <!-- Project 4: Gesture to Speech -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="project-title">Gesture to Speech System</h3>
+                <p class="project-type">CNN-based Classification</p>
+                <p class="project-description">
+                    Real-time gesture recognition system with 16 gesture classes using CNN.
                     MediaPipe hand landmark detection (21 points) with gTTS for speech output.
                 </p>
 
-                <div class="system-tech">
+                <div class="project-tech">
                     <span class="tech-tag">PyTorch</span>
                     <span class="tech-tag">MediaPipe</span>
                     <span class="tech-tag">gTTS</span>
                     <span class="tech-tag">Computer Vision</span>
                 </div>
 
-                <div class="system-links">
-                    <a href="https://github.com/ndaadhi18/Gesture-To-Speech-Project" target="_blank" class="system-link">
+                <div class="project-highlights">
+                    <div class="highlight">
+                        <span class="highlight-icon">✓</span>
+                        <span>16 gesture classes with self-curated dataset</span>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-icon">✓</span>
+                        <span>Real-time hand landmark detection</span>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-icon">✓</span>
+                        <span>Text-to-speech conversion</span>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/ndaadhi18/Gesture-To-Speech-Project" target="_blank" class="project-link">
                         GitHub →
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Deep Dive Section -->
-    <section id="deep-dive" class="section section-dark">
-        <div class="container">
-            <h2 class="section-title">Flagship Deep Dive: Request Lifecycle</h2>
-            <p class="section-subtitle">Step-by-step execution flow of the AI Medical Assistant</p>
-
-            <div class="lifecycle-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker">1</div>
-                    <div class="timeline-content">
-                        <h4>User Uploads PDF (Frontend)</h4>
-                        <ul>
-                            <li>User uploads medical PDF via Streamlit file uploader</li>
-                            <li>Frontend sends PDF to <code>/upload/</code> endpoint</li>
-                            <li>PDF saved to <code>backend/uploaded_docs/</code></li>
-                            <li><strong>Processing:</strong> PyPDFLoader extracts text from PDF pages</li>
-                            <li><strong>Chunking:</strong> RecursiveCharacterTextSplitter (chunk_size=1000, overlap=200)</li>
-                            <li><strong>Embedding:</strong> Google Generative AI Embeddings (model: embedding-001)</li>
-                            <li><strong>Storage:</strong> Vectors upserted to Pinecone index with metadata</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker">2</div>
-                    <div class="timeline-content">
-                        <h4>User Asks Question (Frontend)</h4>
-                        <ul>
-                            <li>User types question in Streamlit chat interface</li>
-                            <li>Frontend sends POST request to <code>/ask/</code> endpoint</li>
-                            <li>Request includes <code>question</code> as form data</li>
-                            <li>Backend logger records: <code>user query: {question}</code></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker">3</div>
-                    <div class="timeline-content">
-                        <h4>Query Embedding & Retrieval</h4>
-                        <ul>
-                            <li>Backend embeds question using GoogleGenerativeAIEmbeddings</li>
-                            <li>Pinecone query: <code>index.query(vector=embedded_query, top_k=3)</code></li>
-                            <li><strong>Retrieval Strategy:</strong> Top-3 most similar vectors (cosine similarity)</li>
-                            <li>Results include metadata (text, page number, source)</li>
-                            <li>Converts Pinecone matches to LangChain <code>Document</code> objects</li>
-                            <li>Creates <code>SimpleRetriever</code> with retrieved documents</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker">4</div>
-                    <div class="timeline-content">
-                        <h4>LLM Chain Execution</h4>
-                        <ul>
-                            <li>Initializes Groq LLM: <code>ChatGroq(model_name='llama3-70b-8192')</code></li>
-                            <li>Loads custom prompt template (MediBot persona)</li>
-                            <li><strong>Prompt Constraints:</strong>
-                                <ul style="margin-top: 8px;">
-                                    <li>"Respond based <strong>only on the provided context</strong>"</li>
-                                    <li>"If context does not contain answer, say: 'I couldn't find relevant information'"</li>
-                                    <li>"Do NOT make up facts"</li>
-                                    <li>"Do NOT give medical advice or diagnoses"</li>
-                                </ul>
-                            </li>
-                            <li>Creates <code>RetrievalQA</code> chain (chain_type="stuff")</li>
-                            <li>Chain invokes LLM with context + question</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker">5</div>
-                    <div class="timeline-content">
-                        <h4>Response Generation & Return</h4>
-                        <ul>
-                            <li>LLM generates answer grounded in retrieved context</li>
-                            <li>Chain returns: <code>{"result": answer, "source_documents": docs}</code></li>
-                            <li>Backend logger records: <code>query successful</code></li>
-                            <li><strong>Error Handling:</strong> If exception occurs → JSONResponse(status_code=500, content={"error": str(e)})</li>
-                            <li>Response sent back to Streamlit frontend</li>
-                            <li>Frontend displays answer in chat interface</li>
-                            <li>Chat history updated and available for download</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker">6</div>
-                    <div class="timeline-content">
-                        <h4>Production Deployment</h4>
-                        <ul>
-                            <li><strong>Backend:</strong> Deployed on Render (FastAPI with Uvicorn)</li>
-                            <li><strong>Frontend:</strong> Deployed on Streamlit Cloud</li>
-                            <li><strong>CORS:</strong> Configured to allow cross-origin requests from Streamlit</li>
-                            <li><strong>Environment Variables:</strong> GOOGLE_API_KEY, PINECONE_API_KEY, GROQ_API_KEY</li>
-                            <li><strong>Monitoring:</strong> Logger tracks all queries and errors</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="scale-constraints">
-                <h3>What Breaks Under Scale</h3>
-                <div class="constraint-grid">
-                    <div class="constraint-card">
-                        <h4>Embedding Latency</h4>
-                        <p><strong>Problem:</strong> Each query requires embedding call to Google API (adds 200-500ms)</p>
-                        <p><strong>Why Not Cached:</strong> Questions are unpredictable; caching embeddings wouldn't help</p>
-                        <p><strong>Mitigation:</strong> Use local embedding model (sentence-transformers) for faster inference</p>
-                    </div>
-                    <div class="constraint-card">
-                        <h4>Top-K Retrieval Accuracy</h4>
-                        <p><strong>Problem:</strong> Top-3 retrieval may miss relevant context if document is large</p>
-                        <p><strong>Why This Approach:</strong> Llama3-70B context window limits; more chunks = higher cost</p>
-                        <p><strong>Mitigation:</strong> Implement re-ranking (e.g., Cohere rerank) or increase chunk overlap</p>
-                    </div>
-                    <div class="constraint-card">
-                        <h4>Concurrent Requests</h4>
-                        <p><strong>Problem:</strong> Render free tier has limited concurrency; Groq API has rate limits</p>
-                        <p><strong>Why Not Load Balanced:</strong> Free tier deployment for demo purposes</p>
-                        <p><strong>Mitigation:</strong> Upgrade to paid Render plan + implement request queuing</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trade-offs Section -->
-    <section id="tradeoffs" class="section">
-        <div class="container">
-            <h2 class="section-title">Trade-offs and Constraints</h2>
-
-            <div class="tradeoff-grid">
-                <div class="tradeoff-card">
-                    <h4>Groq (Llama3-70B) vs. OpenAI GPT-4</h4>
-                    <div class="decision">
-                        <span class="decision-chosen">✓ Chosen: Groq with Llama3-70B</span>
-                        <span class="decision-rejected">✗ Rejected: OpenAI GPT-4</span>
-                    </div>
-                    <p><strong>Why:</strong> Groq offers faster inference (300 tokens/sec vs 40 tokens/sec) and free tier for demos. Llama3-70B quality is sufficient for medical document Q&A.</p>
-                    <p><strong>Cost:</strong> Groq free tier has rate limits (30 requests/min). Production would need paid plan.</p>
-                </div>
-
-                <div class="tradeoff-card">
-                    <h4>Pinecone vs. ChromaDB</h4>
-                    <div class="decision">
-                        <span class="decision-chosen">✓ Chosen: Pinecone (cloud-hosted)</span>
-                        <span class="decision-rejected">✗ Rejected: ChromaDB (local)</span>
-                    </div>
-                    <p><strong>Why:</strong> Pinecone is managed, scalable, and persists across deployments. ChromaDB would require persistent storage on Render (not available on free tier).</p>
-                    <p><strong>Cost:</strong> Pinecone free tier limited to 1 index, 100K vectors. Production needs paid plan for multiple indexes.</p>
-                </div>
-
-                <div class="tradeoff-card">
-                    <h4>FastAPI Backend vs. Streamlit-Only</h4>
-                    <div class="decision">
-                        <span class="decision-chosen">✓ Chosen: Separate FastAPI backend</span>
-                        <span class="decision-rejected">✗ Rejected: All logic in Streamlit</span>
-                    </div>
-                    <p><strong>Why:</strong> FastAPI backend enables API reusability (can add mobile app, CLI, etc.). Streamlit-only would couple UI and logic.</p>
-                    <p><strong>Cost:</strong> Two separate deployments (Render + Streamlit Cloud). CORS configuration required.</p>
-                </div>
-
-                <div class="tradeoff-card">
-                    <h4>RetrievalQA ("stuff") vs. MapReduce</h4>
-                    <div class="decision">
-                        <span class="decision-chosen">✓ Chosen: "stuff" chain (all context in one prompt)</span>
-                        <span class="decision-rejected">✗ Rejected: MapReduce (summarize each chunk)</span>
-                    </div>
-                    <p><strong>Why:</strong> Medical questions need precise context. MapReduce summarization can lose critical details (e.g., dosage, contraindications).</p>
-                    <p><strong>Cost:</strong> "Stuff" chain fails if retrieved context exceeds LLM context window. Top-3 retrieval mitigates this.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Proof Section -->
-    <section id="proof" class="section section-dark">
-        <div class="container">
-            <h2 class="section-title">Proof of Execution</h2>
-
-            <div class="proof-grid">
-                <div class="proof-card">
-                    <h3>Deployed Systems</h3>
-                    <div class="deployment-list">
-                        <div class="deployment-item">
-                            <span class="live-indicator">🟢 LIVE</span>
-                            <div>
-                                <strong>Medical Assistant (Frontend)</strong>
-                                <a href="https://medical-assistance-chatbot.streamlit.app/" target="_blank">medical-assistance-chatbot.streamlit.app</a>
-                            </div>
-                        </div>
-                        <div class="deployment-item">
-                            <span class="live-indicator">🟢 LIVE</span>
-                            <div>
-                                <strong>Medical Assistant (Backend API)</strong>
-                                <a href="https://medical-assistance-chatbot-gzla.onrender.com" target="_blank">medical-assistance-chatbot-gzla.onrender.com</a>
-                            </div>
-                        </div>
-                        <div class="deployment-item">
-                            <span class="live-indicator">🟢 LIVE</span>
-                            <div>
-                                <strong>RAG Agent</strong>
-                                <a href="https://agentic-rag-using-langgraph.streamlit.app/" target="_blank">agentic-rag-using-langgraph.streamlit.app</a>
-                            </div>
-                        </div>
-                        <div class="deployment-item">
-                            <span class="live-indicator">🟡 LOCAL</span>
-                            <div>
-                                <strong>Multi-Tool Chatbot</strong>
-                                <span>Streamlit UI</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="proof-card">
-                    <h3>GitHub Repositories</h3>
-                    <div class="repo-list">
-                        <a href="https://github.com/ndaadhi18/medical-assistance-chatbot" target="_blank" class="repo-item">
-                            <span class="repo-name">medical-assistance-chatbot</span>
-                            <span class="repo-desc">Production RAG system (FastAPI + Streamlit)</span>
-                        </a>
-                        <a href="https://github.com/ndaadhi18/rag-agent-using-langgraph" target="_blank" class="repo-item">
-                            <span class="repo-name">rag-agent-using-langgraph</span>
-                            <span class="repo-desc">Self-reflective RAG with LangGraph</span>
-                        </a>
-                        <a href="https://github.com/ndaadhi18/Multi-tool-Chatbot" target="_blank" class="repo-item">
-                            <span class="repo-name">Multi-tool-Chatbot</span>
-                            <span class="repo-desc">Tool orchestration + memory</span>
-                        </a>
-                        <a href="https://github.com/ndaadhi18/Gesture-To-Speech-Project" target="_blank" class="repo-item">
-                            <span class="repo-name">Gesture-To-Speech-Project</span>
-                            <span class="repo-desc">CNN-based gesture classification</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="proof-card limitations">
-                    <h3>Honest Limitations</h3>
-                    <ul class="limitations-list">
-                        <li><strong>No Production Monitoring:</strong> No telemetry for latency, error rates, or API costs in production</li>
-                        <li><strong>Free Tier Constraints:</strong> Render free tier spins down after inactivity (cold start: 30-60s)</li>
-                        <li><strong>Rate Limits:</strong> Groq free tier: 30 req/min. Pinecone free tier: 100K vectors max</li>
-                        <li><strong>No Medical Validation:</strong> Responses not validated by medical professionals (educational use only)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Closing Section -->
-    <section id="closing" class="section">
-        <div class="container">
-            <div class="closing-content">
-                <h2>My Approach to Building AI Systems</h2>
-                <p class="closing-text">
-                    I believe in building production-grade systems, not just demos. Here's what sets my work apart:
-                </p>
-                <div class="failure-comparison">
-                    <div class="failure-item demo">
-                        <h4>Demos run locally</h4>
-                        <p>No deployment, no real users, no feedback</p>
-                    </div>
-                    <div class="failure-item enterprise">
-                        <h4>Production systems are deployed</h4>
-                        <p>Real users, real constraints, real trade-offs</p>
-                    </div>
-                </div>
-                <p class="closing-text">
-                    My systems are built for production:
-                </p>
-                <ul class="closing-list">
-                    <li><strong>Deployed to production:</strong> FastAPI on Render, Streamlit on Cloud (not just localhost)</li>
-                    <li><strong>Explicit constraints:</strong> Prompt engineering prevents hallucinations ("Do NOT make up facts")</li>
-                    <li><strong>Trade-offs documented:</strong> I know why I chose Groq over OpenAI, Pinecone over ChromaDB</li>
-                    <li><strong>Honest limitations:</strong> I document what breaks under scale and how to mitigate it</li>
-                </ul>
-                <p class="closing-statement">
-                    I don't build demos that "just work locally." I build systems that deploy, scale, and document their limitations.
-                </p>
-                <div class="closing-cta">
-                    <a href="mailto:ndaadhi18@gmail.com" class="btn btn-primary">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
-                        </svg>
-                        Contact Me
-                    </a>
-                    <a href="https://github.com/ndaadhi18" target="_blank" class="btn btn-secondary">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                        View GitHub Profile
                     </a>
                 </div>
             </div>
@@ -669,10 +252,10 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>Adarsh S — Passionate AI Engineer specializing in RAG Systems & Production Deployment</p>
+        <div class="footer-content">
+            <p>Adarsh S — AI Engineer specializing in RAG Systems & Production Deployment</p>
             <p>📧 ndaadhi18@gmail.com | 📍 Bengaluru, Karnataka, India</p>
-            <p>Last Updated: February 2026</p>
+            <p class="footer-note">Built with passion for production-grade AI systems</p>
         </div>
     </footer>
 
